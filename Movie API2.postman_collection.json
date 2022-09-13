@@ -1,0 +1,939 @@
+{
+	"info": {
+		"_postman_id": "1d1ed90a-9855-4da1-84d6-2f76f75d43b4",
+		"name": "Movie API2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23287697"
+	},
+	"item": [
+		{
+			"name": "Genre",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movie?genre=comedy",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movie"
+					],
+					"query": [
+						{
+							"key": "genre",
+							"value": "comedy"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Genre",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "file",
+							"file": {}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/movie?genre=comedy",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"movie"
+							],
+							"query": [
+								{
+									"key": "genre",
+									"value": "comedy"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 09:30:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 09:30:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Movie_ID\": 2,\n        \"Genre\": \"Comedy\",\n        \"Title\": \"Parasite\",\n        \"Description\": \"A poor family, the Kims, con their way into becoming the servants of a rich family, the Parks. But their easy life gets complicated when their deception is threatened with exposure.\"\n    },\n    {\n        \"Movie_ID\": 5,\n        \"Genre\": \"comedy\",\n        \"Title\": \"wedding\",\n        \"Description\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "TimeSlot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/timeslot?theater_name=Abc&start_time=2022-09-12 00:00:00&end_time=2022-09-13 00:00:00",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"timeslot"
+					],
+					"query": [
+						{
+							"key": "theater_name",
+							"value": "Abc"
+						},
+						{
+							"key": "start_time",
+							"value": "2022-09-12 00:00:00"
+						},
+						{
+							"key": "end_time",
+							"value": "2022-09-13 00:00:00"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "TimeSlot",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/timeslot?theater_name=Abc&start_time=2022-09-12 00:00:00&end_time=2022-09-13 00:00:00",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"timeslot"
+							],
+							"query": [
+								{
+									"key": "theater_name",
+									"value": "Abc"
+								},
+								{
+									"key": "start_time",
+									"value": "2022-09-12 00:00:00"
+								},
+								{
+									"key": "end_time",
+									"value": "2022-09-13 00:00:00"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Sep 2022 09:08:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Sep 2022 09:08:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Movie_ID\": 1,\n    \"Genre\": \"Action\",\n    \"Title\": \"The Irishman\",\n    \"Description\": \"An aging hitman recalls his time with the mob and the intersecting events with his friend, Jimmy Hoffa, through the 1950-70s.\",\n    \"Theater_name\": \"Abc\",\n    \"Start_time\": \"2022-09-12 00:00:00\",\n    \"End_time\": \"2022-09-13 00:00:00\",\n    \"Theater_room_no\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Specific Movie Theater",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/specific?d_date=2022-09-16&theater_name=def",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"specific"
+					],
+					"query": [
+						{
+							"key": "d_date",
+							"value": "2022-09-16"
+						},
+						{
+							"key": "theater_name",
+							"value": "def"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Specific Movie Theater",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/specific?d_date=2022-09-16&theater_name=def",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"specific"
+							],
+							"query": [
+								{
+									"key": "d_date",
+									"value": "2022-09-16"
+								},
+								{
+									"key": "theater_name",
+									"value": "def"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 09:35:49 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 09:35:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Movie_ID\": 2,\n    \"Genre\": \"Comedy\",\n    \"Title\": \"Parasite\",\n    \"Description\": \"A poor family, the Kims, con their way into becoming the servants of a rich family, the Parks. But their easy life gets complicated when their deception is threatened with exposure.\",\n    \"Theater_name\": \"Def\",\n    \"Start_time\": \"2022-09-16 00:00:00\",\n    \"End_time\": \"2022-09-15 00:00:00\",\n    \"Theater_room_no\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Search Performer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/search_performer?performer_name=Pa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"search_performer"
+					],
+					"query": [
+						{
+							"key": "performer_name",
+							"value": "Pa"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search Performer",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/search_performer?performer_name=Pa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"search_performer"
+							],
+							"query": [
+								{
+									"key": "performer_name",
+									"value": "Pa"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Sep 2022 15:06:02 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Sep 2022 15:06:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "54"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"Movie_ID\": 1,\n        \"Genre\": \"Action\",\n        \"Title\": \"The Irishman\",\n        \"Description\": \"An aging hitman recalls his time with the mob and the intersecting events with his friend, Jimmy Hoffa, through the 1950-70s.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Give Rating",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "movie_title",
+							"value": "Iris",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "ringo",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "r_description",
+							"value": "excellent",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/give_rating",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"give_rating"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Give Rating",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "movie_title",
+									"value": "Iris",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "ringo",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "r_description",
+									"value": "excellent",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/give_rating",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"give_rating"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 03:39:31 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 03:39:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Successfully added review for the irishman by user: 'ringo\",\n    \"success\": \"true\"\n}"
+				}
+			]
+		},
+		{
+			"name": "New Movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/new_movie?r_date=2022-09-12",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"new_movie"
+					],
+					"query": [
+						{
+							"key": "r_date",
+							"value": "2022-09-12"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Movies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/new_movie?r_date=2022-09-12",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"new_movie"
+							],
+							"query": [
+								{
+									"key": "r_date",
+									"value": "2022-09-12"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 06:43:41 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 06:43:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Movie_ID\": 1,\n        \"Genre\": \"Action\",\n        \"Title\": \"The Irishman\",\n        \"Description\": \"An aging hitman recalls his time with the mob and the intersecting events with his friend, Jimmy Hoffa, through the 1950-70s.\",\n        \"Theater_name\": \"Abc\",\n        \"Start_time\": \"2022-09-12 00:00:00\",\n        \"End_time\": \"2022-09-13 00:00:00\",\n        \"Theater_room_no\": 1\n    },\n    {\n        \"Movie_ID\": 2,\n        \"Genre\": \"Comedy\",\n        \"Title\": \"Parasite\",\n        \"Description\": \"A poor family, the Kims, con their way into becoming the servants of a rich family, the Parks. But their easy life gets complicated when their deception is threatened with exposure.\",\n        \"Theater_name\": \"Def\",\n        \"Start_time\": \"2022-09-16 00:00:00\",\n        \"End_time\": \"2022-09-15 00:00:00\",\n        \"Theater_room_no\": 2\n    },\n    {\n        \"Movie_ID\": 3,\n        \"Genre\": \"Action\",\n        \"Title\": \"The Favourite\",\n        \"Description\": \"In early 18th century England, a frail Queen Anne occupies the throne and her close friend, Lady Sarah, governs the country in her stead. When a new servant, Abigail, arrives, her charm endears her to Sarah.\",\n        \"Theater_name\": \"\",\n        \"Start_time\": \"2022-09-12 00:00:00\",\n        \"End_time\": \"2022-09-13 04:34:45\",\n        \"Theater_room_no\": 3\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Add Movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "wedding",
+							"type": "text"
+						},
+						{
+							"key": "release",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mpaa_rating",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "director",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "performer_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "action",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/add_movie",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add_movie"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Movie",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "wedding",
+									"type": "text"
+								},
+								{
+									"key": "release",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "length",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "mpaa_rating",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "director",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "performer_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "genre",
+									"value": "action",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/add_movie",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"add_movie"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 09:27:27 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 13 Sep 2022 09:27:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Successfully added movie The King's Man with Movie_ID '19'\",\n    \"success\": \"true\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"value": "",
+			"type": "string"
+		}
+	]
+}
